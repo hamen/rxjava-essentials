@@ -1,0 +1,20 @@
+<resources>
+
+    <color name="myPrimaryColor">#F59927</color>
+    <color name="myPrimaryDarkColor">#ffcd8221</color>
+    <color name="myAccentColor">#000000</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#000000</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+
+    <color name="list_background_normal">#FCFCFC</color>
+    <color name="list_background_secondary_normal">#F2F2F2</color>
+
+    <color name="tpi_checked">#FFFFFFFF</color>
+    <color name="tpi_unchecked">#99FFFFFF</color>
+    <color name="list_item_bg">#ffffff</color>
+
+</resources>

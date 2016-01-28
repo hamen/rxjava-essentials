@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#214193"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_progress"
+            android:background="#214193"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            android:gravity="center">
+
+        <com.rey.material.widget.Button
+                android:id="@+id/button_download"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_height"
+                android:layout_weight="0.4"
+                android:textColor="#FF000000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                android:text="Download"
+                app:ripple="@style/RaiseButtonRippleStyle"
+                app:delayClick="false"/>
+    </LinearLayout>
+
+</LinearLayout>
+
