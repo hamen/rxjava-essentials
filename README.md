@@ -1,6 +1,6 @@
 # RxJava Essentials by Ivan Morgillo
 
-This repo is a reference for the topics and the examples in my RxJava Essentials by [Packt Publishing](https://www.packtpub.com/application-development/rxjava-essentials).
+This repo is a reference for the topics and the examples in my RxJava Essentials by [Packt Publishing](http://bit.ly/rxjava-essentials).
 
 ## Slides ##
 
