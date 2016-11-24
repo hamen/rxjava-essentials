@@ -49,7 +49,7 @@ public class FirstExampleFragment extends Fragment {
 
     private ApplicationAdapter mAdapter;
 
-    private File mFilesDir;
+    private volatile File mFilesDir;
 
     public FirstExampleFragment() {
     }
@@ -80,8 +80,8 @@ public class FirstExampleFragment extends Fragment {
 
         getFileDir()
                 .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(file -> {
+
                     mFilesDir = file;
                     refreshTheList();
                 });
@@ -95,8 +95,11 @@ public class FirstExampleFragment extends Fragment {
     }
 
     private void refreshTheList() {
+        System.out.println(">>> refreshTheList on thread : " + Thread.currentThread().getName());
+
         getApps()
                 .toSortedList()
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<List<AppInfo>>() {
                     @Override
                     public void onCompleted() {
